@@ -14,6 +14,15 @@
 
 }
 
+@font-face{
+    font-family: Jua;
+    src: url(shared-assets/Jua-Regular.ttf)
+}
+
+@font-face{
+    font-family: Kotta;
+    src: url(shared-assets/KottaOne-Regular.ttf)
+}
 
 h1{
     font-family: Koulen;
@@ -23,12 +32,52 @@ h1{
 
 
 .navigation {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
     background-color: #003ACB;
+    max-height: 800px;
+    flex-direction: row;
 }
 
-.navigation ul a {
+input[class="search-bar"] {
+    display: grid;
+    grid-column: span 2 / span 2;
+    grid-column-start: 7;
+    justify-self: end;
+    width: 413px;
+    height: 43px;
+    margin-left: 950px;
+    
+}
+
+nav ul {
+    display: flex;
+    gap:40px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.navigation ul li a {
+    display: flex;
     color: black;
+    border-radius: 15px;
+    flex-direction: row;
+    color: #000;
+    text-align: center;
+    font-family: Koulen;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #80CBC4;
+    justify-content: center;
+    align-content: center;
+    width: 150px;
+    height: 50px;
+    padding-top: 5px;
 }
 
 .upcoming-event {
@@ -36,13 +85,14 @@ h1{
 }
 
 h1[class="account"] {
-    position: absolute;
+    display: flex;
+    justify-content: flex-start;
     color: #000;
-    text-align: center;
-    font-size: 40px;
+    font-size: 96px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-family: Jua;
 }
 
 .buttons{
@@ -84,14 +134,13 @@ a img{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
     padding: 43px 10px 10px 10px;
     
 }
 .input-fields form input{
     height:70px;
     width:914px;
-    border: 3px black dashed;
+    background-color: #d9d9d9;
     border-radius: 10px;
     margin-bottom: 10px; 
     font-size:24px;
@@ -175,5 +224,32 @@ a img{
 }
 
 form h2{
-    font-family: lato;
+    font-family: Kotta;
+    text-align:left;
+    font-size:40px
+}
+
+form select{
+    width: 445px;
+    text-align:center;
+    font-family: Jua;
+    font-size: 32px;
+}
+
+.roundabout{
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.balls{
+    width:15%;
+}
+
+.max{
+    width:15%;
+}
+
+.charlie{
+    width:15%;
 }
