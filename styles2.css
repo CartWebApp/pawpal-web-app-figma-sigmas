@@ -24,12 +24,26 @@
     src: url(shared-assets/KottaOne-Regular.ttf)
 }
 
-h1{
-    font-family: Koulen;
-    font-size: 96px;
-    text-align: center;
-}
+@media screen and (max-width: 1290px) {
+    .h1[class="account"] {
+        font-weight: normal;
+        font-size: 30px;
+    }
+    
+    .medi {
+        font-size: 5px;
+    }
 
+    .pill {
+        position: absolute;
+        margin-left:700px;
+    }
+
+    .charlie, .medi, .pill, .aotd, .upcoming-event {
+
+        border: red 2px solid;
+    }
+}
 
 .navigation {
     display: grid;
@@ -41,20 +55,9 @@ h1{
     flex-direction: row;
 }
 
-input[class="search-bar"] {
-    display: grid;
-    grid-column: span 2 / span 2;
-    grid-column-start: 7;
-    justify-self: end;
-    width: 413px;
-    height: 43px;
-    margin-left: 950px;
-    
-}
-
 nav ul {
     display: flex;
-    gap:40px;
+    gap: 40px;
     justify-content: center;
     list-style-type: none;
     margin: 20px;
@@ -80,19 +83,138 @@ nav ul {
     padding-top: 5px;
 }
 
-.upcoming-event {
-    margin-top: 20px;
+input[class="search-bar"] {
+    display: grid;
+    grid-column: span 2 / span 2;
+    grid-column-start: 7;
+    justify-self: end;
+    width: 413px;
+    height: 43px;
+    margin-left: 950px;
 }
 
 h1[class="account"] {
     display: flex;
     justify-content: flex-start;
+    position: absolute;
+    font-size: 96px;
+    text-align: center;
     color: #000;
     font-size: 96px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     font-family: Jua;
+}
+
+.upcoming-event {
+    display: flex;
+    flex-direction: row;
+    border-radius: 27px;
+    border: 7px solid #000;
+    background-color: #80CBC4;
+    max-width: 1352px;
+    max-height: 302px;
+    margin-top: 200px;
+    margin-left: 56px;
+}
+
+.medi {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-family: Jua;
+    font-size: 30px;
+    font-style: normal;
+    max-width: 210px;
+}
+
+.charlie {
+    margin-left: 350px;
+}
+
+.pill {
+    margin-left: 400px;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    font-family: Jua;
+    padding-left: 20px;
+}
+
+.events h2 {
+    font-size: 40px;
+    margin-left: 450px;
+}
+
+.upcoming1, .upcoming2, .upcoming3 {
+    display: flex;
+    flex-direction: column;
+    font-family: Jua;
+    margin-bottom: 37px;
+    border-radius: 7px;
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-left: 500px;
+    border: 2px black solid;
+    max-width: 436px;
+    height: 88px;
+}
+
+.pill-upcoming {
+    width: 70px;
+    height: 70px;
+    margin-left: 325px;
+    margin-top: -100px;
+    margin-bottom: 25px;
+}
+
+.walk-upcoming {
+    width: 200px;
+    height: 700px;
+    margin-left: 255px;
+    margin-top: -140px;
+    margin-bottom: 25px;
+}
+
+.vet-upcoming {
+    width: 150px;
+    height: 150px;
+    margin-left: 295px;
+    margin-top: -140px;
+    margin-bottom: 25px;
+}
+
+.aotd {
+    position: absolute;
+    margin-left: 1500px;
+    margin-top: -950px;
+    width: 500px;
+}
+
+.captain {
+    width: 500px;
+}
+
+.aotd-head {
+    color: #000;
+    text-align: center;
+    font-family: Koulen;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.aotd-desc {
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 .buttons{
