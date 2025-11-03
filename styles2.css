@@ -195,6 +195,7 @@ h1[class="account"] {
 }
 
 .captain {
+    border-radius: 15px;
     width: 500px;
 }
 
@@ -216,6 +217,132 @@ h1[class="account"] {
     font-weight: 900;
     line-height: normal;
 }
+
+
+.our-team {
+    display: flex;
+    background: url(shared-assets/Rectangle\ 505.png);
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 370px;
+    flex-direction: column;
+}
+
+.our-team h2 {
+    font-family: Koulen;
+    font-size: 40px;
+    margin-left: 70px;
+}
+
+.our-team p {
+    font-family: Jua;
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+.our-team .about {
+    font-family: koulen;
+    font-size: 25px;
+    background-color: white;
+    max-width: 400px;
+    padding-top: 10px;
+    padding-left:5px;
+    height: 50px;
+}
+
+.whowhat {
+    font-family: Jua;
+}
+
+.info {
+    font-family: Jua;
+    display: flex;
+    flex-direction: column;
+    gap: 400px;
+
+}
+
+.info h2 {
+    margin-left: 200px;
+}
+
+.info1 p, .info3 p {
+    font-size: 30px;
+    padding-left: 40px;
+}
+
+.info1, .info2, .info3 {
+    text-align: start;
+    max-width: 950px;
+}
+
+.info1,.info3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.info2 {
+    display: flex;
+    position: absolute;
+    flex-direction :row-reverse;
+    margin-top: 400px;
+    margin-left: 1075px;
+    max-height: 400px;
+    text-align: end;
+}
+
+.info2 p {
+    width: 900px;
+    font-size: 30px;
+}
+
+.team-pic1, .team-pic2, .team-pic3 {
+    border-radius: 15px;
+}
+
+.contact-us {
+    background-color: #d9d9d9;
+    margin-top: -300px;
+}
+
+.contact-us h2 {
+    font-family: jua;
+    font-size: 36px;
+    margin-left: 840px; 
+}
+
+.contact-us p {
+    font-family: Koulen;
+    background-color: #E5E5E5;
+    max-width: 239px;
+    border-radius: 25px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.phone-number, .pawpalgmail {
+    width: 200px;
+    text-align: center;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 279px;
+}
+
+.trademark {
+    font-family: koulen;
+    text-align: end;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------*/
 
 .buttons{
     display:flex;
