@@ -38,11 +38,6 @@
         position: absolute;
         margin-left:700px;
     }
-
-    .charlie, .medi, .pill, .aotd, .upcoming-event {
-
-        border: red 2px solid;
-    }
 }
 
 .navigation {
@@ -93,11 +88,12 @@ input[class="search-bar"] {
     margin-left: 950px;
 }
 
-h1[class="account"] {
+a[class="account"] {
     display: flex;
     justify-content: flex-start;
     position: absolute;
     font-size: 96px;
+    text-decoration: none;
     text-align: center;
     color: #000;
     font-size: 96px;
